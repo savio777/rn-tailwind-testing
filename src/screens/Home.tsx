@@ -1,9 +1,10 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import { Text, TextInput, View } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import colors from "tailwindcss/colors";
 
 import Button from "../components/Button";
+import Input from "../components/Input";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       <Text className="text-primary-main font-bold mt-4 text-2xl">
         Hello Tailwind on Native
       </Text>
+
+      <Input placeholder="teste 1" />
+      <Input placeholder="teste 2" />
 
       <Button className="w-full mt-10" />
 
